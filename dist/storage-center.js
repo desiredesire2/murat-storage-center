@@ -2,7 +2,20 @@
 class HAStorageCenter extends HTMLElement{
 constructor(){super();this.attachShadow({mode:"open"});}
 set hass(h){this._hass=h;this.render();}
-num(id){return Number(this._hass?.states[id]?.state||0);}
+num(id) {
+  const st = this._hass?.states[id]?.state;
+
+  if (!st || st === "unknown" || st === "unavailable") return 0;
+
+  // Türkçe ondalık desteği
+  const txt = String(st)
+    .replace(",", ".")
+    .replace(/[^\d.-]/g, "");
+
+  const n = parseFloat(txt);
+
+  return Number.isFinite(n) ? n : 0;
+}
 state(id){return this._hass?.states[id]?.state||"-";}
 render(){
 const used=this.num("sensor.system_monitor_disk_kullanimi");
