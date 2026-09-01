@@ -1,8 +1,8 @@
 {
-  "name": "murat-storage-center",
-  "version": "1.0.0",
-  "description": "Premium Home Assistant Storage Dashboard",
-  "type": "module",
-  "author": "Murat & ChatGPT",
-  "license": "MIT"
+  "name":"murat-storage-center",
+  "version":"0.1.0",
+  "description":"Premium Home Assistant Storage Dashboard",
+  "type":"module",
+  "author":"Murat & ChatGPT",
+  "license":"MIT"
 }

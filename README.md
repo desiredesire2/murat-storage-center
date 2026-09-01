@@ -1,12 +1,14 @@
 # Murat Storage Center
 
-Premium Storage Dashboard for Home Assistant.
+Premium glassmorphism Storage Dashboard for Home Assistant.
 
 ## Özellikler
+- Disk halkası
+- Frigate
+- CPU
+- RAM
+- Network
+- HACS uyumlu
 
-- 💽 Disk Halkası
-- 🎥 Frigate
-- ⚙️ CPU
-- 🧠 RAM
-- 🌐 Network
-- 📊 Canlı İstatistikler
+Kurulum:
+HACS → Custom Repository → Dashboard
