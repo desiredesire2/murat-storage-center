@@ -1,0 +1,16 @@
+name: Validate
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check JS exists
+        run: |
+          test -f dist/storage-center.js
