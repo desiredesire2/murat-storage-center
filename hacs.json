@@ -1,7 +1,1 @@
-{
-  "name": "Murat Storage Center",
-  "content_in_root": false,
-  "filename": "dist/storage-center.js",
-  "render_readme": true,
-  "homeassistant": "2025.1.0"
-}
+{"name":"Murat Storage Center","content_in_root":false,"filename":"dist/storage-center.js","render_readme":true,"homeassistant":"2025.1.0"}

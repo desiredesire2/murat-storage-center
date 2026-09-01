@@ -1,2 +1,1 @@
-export const VERSION="0.1.0";
-console.log("Murat Storage Center");
+export const VERSION="0.3.0";
